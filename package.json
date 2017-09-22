@@ -1,0 +1,27 @@
+{
+  "name": "crypto-value",
+  "author": "Jimi Smoot",
+  "version": "0.0.2",
+  "description": "",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "prepublish": "build",
+    "build": "tsc",
+    "tsc": "./node_modules/typescript/bin/tsc",
+    "ts:test": "mocha -r ts-node/register ./test/**/*.test.ts",
+    "ts:test:watch": "mocha -r ts-node/register --watch-extensions ts --watch ./test/**/*.test.ts"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "bignumber.js": "^4.0.4"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/mocha": "^2.2.43",
+    "chai": "^4.1.2",
+    "mocha": "^3.5.3",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.5.2"
+  }
+}
