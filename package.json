@@ -1,7 +1,7 @@
 {
   "name": "crypto-value",
   "author": "Jimi Smoot",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Crypto value helps you manage the various cryptocurrency conversions.",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
