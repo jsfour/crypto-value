@@ -32,6 +32,13 @@ import * as Cv from "crypto-value"
 
 const myValue = Cv.buildEthereumValueFromEth("0.012009")
 myValue.toWei().toString() # => "12009000000000000"
+myValue.toBase() # => "0.01200900"
+
+// Change the percision for "toBase"
+
+Cv.setBasePercision(2)
+myValue.toBase() # => "0.01"
+
 ```
 
 Or if you need to save to the database.
