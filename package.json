@@ -1,17 +1,17 @@
 {
   "name": "crypto-value",
   "author": "Jimi Smoot",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Crypto value helps you manage the various cryptocurrency conversions.",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
-  "repository": "github:github.com/sfoxhq/crypto-value",
+  "repository": "github:sfoxhq/crypto-value",
   "scripts": {
-    "prepublish": "build",
-    "build": "tsc",
     "tsc": "./node_modules/typescript/bin/tsc",
     "ts:test": "mocha -r ts-node/register ./test/**/*.test.ts",
-    "ts:test:watch": "mocha -r ts-node/register --watch-extensions ts --watch ./test/**/*.test.ts"
+    "ts:test:watch": "mocha -r ts-node/register --watch-extensions ts --watch ./test/**/*.test.ts",
+    "build": "tsc",
+    "prepublish": "npm build"
   },
   "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
